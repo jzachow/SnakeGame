@@ -24,11 +24,14 @@ namespace SnakeGame
             Height = height;
             Width = width;
             Board = new char[height, width];
-            Snake = new Snake(new Point(0, 0), new Point(0, 1));
-            Snake.Body.Add(new Point(0, 1));
-            Snake.Body.Add(new Point(0, 2));
-            Snake.Body.Add(new Point(0, 3));
-            Snake.Body.Add(new Point(0, 4));
+            Snake = new Snake(new Point(0, 0), new Point(0, 1));           
+            Snake.Body.Add(new Point(1, 1));
+            Snake.Body.Add(new Point(1, 2));
+            Snake.Body.Add(new Point(2, 2));
+            Snake.Body.Add(new Point(2, 3));
+            Snake.Body.Add(new Point(2, 4));
+            Snake.Body.Add(new Point(2, 5));
+            Snake.Body.Add(new Point(2, 6));
         }
 
         public void Render()
